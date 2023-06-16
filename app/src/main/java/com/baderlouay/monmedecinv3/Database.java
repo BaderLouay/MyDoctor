@@ -17,12 +17,17 @@ public class Database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String qry1 = "create table users(username text, email text, password text)";
         sqLiteDatabase.execSQL(qry1);
+
+        String qry2 = "create table doctors(doctor text, spec text, address text, fee text)";
+        sqLiteDatabase.execSQL(qry2);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+
+
     public void register(String username, String email, String password) {
         ContentValues cv = new ContentValues();
         cv.put("username", username);
@@ -44,5 +49,39 @@ public class Database extends SQLiteOpenHelper {
             result = 1;
         }
         return result;
+    }
+
+    public void addDoctor(String doctor, String spec, String address, String fee) {
+        ContentValues cv = new ContentValues();
+        cv.put("doctor", doctor);
+        cv.put("spec", spec);
+        cv.put("address", address);
+        cv.put("fee", fee);
+        SQLiteDatabase db = getWritableDatabase();
+        db.insert("doctors", null, cv);
+        db.close();
+    }
+
+    public int checkDoctor(String doctor, String spec) {
+        int result=0;
+        String str[] = new String[2];
+        str[0] = doctor;
+        str[1] = spec;
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor c = db.rawQuery("select * from doctors where doctor = ? and spec = ?", str);
+        if(c.moveToFirst()){
+            result=1;
+        }
+        db.close();
+        return result;
+    }
+
+    public void removeDoctor(String doctor,String spec){
+        String str[] = new String[2];
+        str[0] = doctor;
+        str[1] = spec;
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("doctors","doctor=? and spec=?",str);
+        db.close();
     }
 }
