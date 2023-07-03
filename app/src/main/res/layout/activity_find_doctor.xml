@@ -43,7 +43,7 @@
         android:rowCount="3">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDFamilyPhysician"
+            android:id="@+id/cardFDAnaesthesia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -64,15 +64,16 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/family_physicians" />
+                    android:src="@drawable/anaesthesia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FAMILY PHYSICIANS"
+                    android:text="ANAESTHESIA"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -113,7 +114,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardFDDentist"
+            android:id="@+id/cardFDOphthalmoligist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -136,12 +137,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/dentist" />
+                    android:src="@drawable/ophtalmologist" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DENTIST"
+                    android:text="OPHTHALMOLIGIST"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textStyle="bold" />

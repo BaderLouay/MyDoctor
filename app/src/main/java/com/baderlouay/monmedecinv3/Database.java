@@ -20,6 +20,8 @@ public class Database extends SQLiteOpenHelper {
 
         String qry2 = "create table doctors(doctor text, spec text, address text, fee text)";
         sqLiteDatabase.execSQL(qry2);
+
+
     }
 
     @Override
