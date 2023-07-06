@@ -17,39 +17,39 @@ import java.util.HashMap;
 public class DoctorDetailsActivity extends AppCompatActivity {
     private String[][] doctor_details1 =
             {
-                    {"Doctor Name : Zaki Hidouri", "Adress : Avenue Avicenne doualy… Ariana Ariana Ville", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "60 DT"},
-                    {"Doctor Name : Houcine Mnasri", "Adress : 153 avenue habib bourguiba-… Ariana Ariana Ville", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "65 DT"},
-                    {"Doctor Name : Ghanem Mtibaa", "Adress : Rue Hedi Nouira, Immeuble… Sfax Sfax Ville", "Exp : 13 yrs", "Mobile N° : XX XXX XXX", "65 DT"},
-                    {"Doctor Name : Ikbel Mbarek", "Adress : Cité awled bouyahi… Gafsa Redeyef", "Exp : 9 yrs", "Mobile N° : XX XXX XXX", "70 DT"},
-                    {"Doctor Name : Mohamed Mlik", "Adress : palmarium sfax 3027… Ariana Ariana Ville", "Exp : 5 yrs", "Mobile N° : XX XXX XXX", "70 DT"},
-                    {"Doctor Name : Nizar Abdedaiem", "Adress : Erable medical cabinet… Tunis La Goulette", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50 DT"},
-                    {"Doctor Name : Mahmoud Ayari", "Adress : 82 Ave Hassen Nouri,… Bizerte Bizerte Nord", "Exp : 14 yrs", "Mobile N° : XX XXX XXX", "70 DT"},
-                    {"Doctor Name : Amira Dgham", "Adress : rue farhat hashed Ariana Ariana Ville", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "80 DT"},
-                    {"Doctor Name : Anane Lamia Ben Hassin", "Adress : Dar el hakim à coté… Médenine Djerba - Houmt Souk", "Exp : 7 yrs", "Mobile N° : XX XXX XXX", "75 DT"}
+                    {"Doctor Name : Zaki Hidouri", "Adress : Avenue Avicenne doualy… Ariana Ariana Ville", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "60"},
+                    {"Doctor Name : Houcine Mnasri", "Adress : 153 avenue habib bourguiba-… Ariana Ariana Ville", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "65"},
+                    {"Doctor Name : Ghanem Mtibaa", "Adress : Rue Hedi Nouira, Immeuble… Sfax Sfax Ville", "Exp : 13 yrs", "Mobile N° : XX XXX XXX", "65"},
+                    {"Doctor Name : Ikbel Mbarek", "Adress : Cité awled bouyahi… Gafsa Redeyef", "Exp : 9 yrs", "Mobile N° : XX XXX XXX", "70"},
+                    {"Doctor Name : Mohamed Mlik", "Adress : palmarium sfax 3027… Ariana Ariana Ville", "Exp : 5 yrs", "Mobile N° : XX XXX XXX", "70"},
+                    {"Doctor Name : Nizar Abdedaiem", "Adress : Erable medical cabinet… Tunis La Goulette", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50"},
+                    {"Doctor Name : Mahmoud Ayari", "Adress : 82 Ave Hassen Nouri,… Bizerte Bizerte Nord", "Exp : 14 yrs", "Mobile N° : XX XXX XXX", "70"},
+                    {"Doctor Name : Amira Dgham", "Adress : rue farhat hashed Ariana Ariana Ville", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "80"},
+                    {"Doctor Name : Anane Lamia Ben Hassin", "Adress : Dar el hakim à coté… Médenine Djerba - Houmt Souk", "Exp : 7 yrs", "Mobile N° : XX XXX XXX", "75"}
             };
 
     private String[][] doctor_details2 =
             {
-                    {"Doctor Name : Hana Briki", "Adress : El ghazala centre,avenue… Ariana Ariana Ville", "Exp : 7 yrs", "Mobile N° : XX XXX XXX", "60 DT"},
-                    {"Doctor Name : Fatma Mahjoub", "Adress : El Menzah 5 Ariana Tunisia  ", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50 DT"},
-                    {"Doctor Name : Zouhaier Chater", "Adress : Les Berges Du Lac Tunis Tunisia ", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50 DT"},
-                    {"Doctor Name : Manel Bousselmi", "Adress : Centre Horizon Médical 1er étage,Route de Bizerte Km4", "Exp : 11 yrs", "Mobile N° : XX XXX XXX", "80 DT"},
-                    {"Doctor Name : Manel Arfaoui", "Adress : 74 Avenue haramayn sharifayn, résidence houcine, Mourouj 3", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "75 DT"},
-                    {"Doctor Name : Mohamed Hassen Bessaidi", "Adress : Centre médical Hannibal, 3 ème étage, jardins du lac", "Exp : 5 yrs", "Mobile N° : XX XXX XXX", "60 DT"},
-                    {"Doctor Name : Wafa Said", "Adress : Centre médical jardins de carthage 75 avenue de carthage", "Exp : 15 yrs", "Mobile N° : XX XXX XXX", "75 DT"},
+                    {"Doctor Name : Hana Briki", "Adress : El ghazala centre,avenue… Ariana Ariana Ville", "Exp : 7 yrs", "Mobile N° : XX XXX XXX", "60"},
+                    {"Doctor Name : Fatma Mahjoub", "Adress : El Menzah 5 Ariana Tunisia  ", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50"},
+                    {"Doctor Name : Zouhaier Chater", "Adress : Les Berges Du Lac Tunis Tunisia ", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50"},
+                    {"Doctor Name : Manel Bousselmi", "Adress : Centre Horizon Médical 1er étage,Route de Bizerte Km4", "Exp : 11 yrs", "Mobile N° : XX XXX XXX", "80"},
+                    {"Doctor Name : Manel Arfaoui", "Adress : 74 Avenue haramayn sharifayn, résidence houcine, Mourouj 3", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "75"},
+                    {"Doctor Name : Mohamed Hassen Bessaidi", "Adress : Centre médical Hannibal, 3 ème étage, jardins du lac", "Exp : 5 yrs", "Mobile N° : XX XXX XXX", "60"},
+                    {"Doctor Name : Wafa Said", "Adress : Centre médical jardins de carthage 75 avenue de carthage", "Exp : 15 yrs", "Mobile N° : XX XXX XXX", "75"},
             };
 
     private String[][] doctor_details3 =
             {
-                    {"Doctor Name : Raja Touzri", "Adress : Centre Médical el Ghazela,… Ariana Raoued", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50 DT"},
-                    {"Doctor Name : Issam Hajlaoui", "Adress : immeuble baklouti 2éme… Sidi Bouzid Bir El Hafey", "Exp : 11 yrs", "Mobile N° : XX XXX XXX", "70 DT"},
-                    {"Doctor Name : Fares Turki", "Adress : Centre Tunisie Médicale… Ariana Ariana Ville", "Exp : 10 yrs", "Mobile N° : XX XXX XXX", "45 DT"},
-                    {"Doctor Name : Zakaria Dekli", "Adress : 242 Avenue Habib Bourguiba,… Tunis Le Kram", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "90 DT"},
-                    {"Doctor Name : Haykel Kamoun", "Adress : Centre Maghreb Médical… Tunis Centre ville", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "75 DT"},
-                    {"Doctor Name : Soumaya Ben Aissa", "Adress : Cabinet Dr Soumaya Ben… Ariana Ariana Ville", "Exp : 7 yrs", "Mobile N° : XX XXX XXX", "45 DT"},
-                    {"Doctor Name : Ilhem Mili", "Adress : Hôpital Charles Nicolle,… Ariana Ariana Ville", "Exp : 14 yrs", "Mobile N° : XX XXX XXX", "60 DT"},
-                    {"Doctor Name : Mohame Khelif", "Adress : Hermes Médical en face… Nabeul Grombalia", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "60 DT"},
-                    {"Doctor Name : Mejda Gharbi", "Adress : 52 avenue de la liberté,… Nabeul Korba", "Exp : 15 yrs", "Mobile N° : XX XXX XXX", "85 DT"},
+                    {"Doctor Name : Raja Touzri", "Adress : Centre Médical el Ghazela,… Ariana Raoued", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "50"},
+                    {"Doctor Name : Issam Hajlaoui", "Adress : immeuble baklouti 2éme… Sidi Bouzid Bir El Hafey", "Exp : 11 yrs", "Mobile N° : XX XXX XXX", "70"},
+                    {"Doctor Name : Fares Turki", "Adress : Centre Tunisie Médicale… Ariana Ariana Ville", "Exp : 10 yrs", "Mobile N° : XX XXX XXX", "45"},
+                    {"Doctor Name : Zakaria Dekli", "Adress : 242 Avenue Habib Bourguiba,… Tunis Le Kram", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "90"},
+                    {"Doctor Name : Haykel Kamoun", "Adress : Centre Maghreb Médical… Tunis Centre ville", "Exp : 8 yrs", "Mobile N° : XX XXX XXX", "75"},
+                    {"Doctor Name : Soumaya Ben Aissa", "Adress : Cabinet Dr Soumaya Ben… Ariana Ariana Ville", "Exp : 7 yrs", "Mobile N° : XX XXX XXX", "45"},
+                    {"Doctor Name : Ilhem Mili", "Adress : Hôpital Charles Nicolle,… Ariana Ariana Ville", "Exp : 14 yrs", "Mobile N° : XX XXX XXX", "60"},
+                    {"Doctor Name : Mohame Khelif", "Adress : Hermes Médical en face… Nabeul Grombalia", "Exp : 12 yrs", "Mobile N° : XX XXX XXX", "60"},
+                    {"Doctor Name : Mejda Gharbi", "Adress : 52 avenue de la liberté,… Nabeul Korba", "Exp : 15 yrs", "Mobile N° : XX XXX XXX", "85"},
             };
 
     private String[][] doctor_details4 =
@@ -119,7 +119,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
             item.put( "line2", doctor_details[i][1]);
             item.put( "line3", doctor_details[i][2]);
             item.put( "line4", doctor_details[i][3]);
-            item.put( "line5", "Fee:"+doctor_details[i][4]);
+            item.put( "line5", "Fee:"+doctor_details[i][4] + " DT");
             list.add( item );
         }
         sa = new SimpleAdapter(this,list,

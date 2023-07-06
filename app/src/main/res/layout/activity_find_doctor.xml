@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/back2"
     tools:context=".FindDoctorActivity">
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
+        android:fontFamily="@font/jockey_one"
         android:text="MyDoctor"
         android:textColor="@color/white"
         android:textSize="30sp"
