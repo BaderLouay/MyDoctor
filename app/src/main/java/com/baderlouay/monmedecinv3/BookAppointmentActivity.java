@@ -88,7 +88,6 @@ public class BookAppointmentActivity extends AppCompatActivity {
         btnApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
             }
         });
     }

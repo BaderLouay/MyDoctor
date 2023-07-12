@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor.apply();
                         startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                     } else {
-                        Toast.makeText(getApplicationContext(),"Invalid Username and Password", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Invalid Username or Password", Toast.LENGTH_SHORT).show();
                     }
 
                 }
