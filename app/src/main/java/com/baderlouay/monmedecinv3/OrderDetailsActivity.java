@@ -53,12 +53,12 @@ public class OrderDetailsActivity extends AppCompatActivity {
             order_details[i][0] = strData[0];
             order_details[i][1] = strData[1];
             if (strData[7].compareTo("medicine")==0){
-                order_details[i][3] = "Date/Time: " + strData[4];
+                order_details[i][3] = "   D/T: " + strData[4];
             } else {
-                order_details[i][3] = "Date/Time: " + strData[4] + " " + strData[5];
+                order_details[i][3] = "   D/T: " + strData[4] + " " + strData[5];
             }
-            order_details[i][2] = "Total Price: " + strData[6] + " DT";
-            order_details[i][4] = "Type: " + strData[7];
+            order_details[i][2] = "Price:" + strData[6] + " DT";
+            order_details[i][4] = strData[7];
         }
 
         list = new ArrayList();

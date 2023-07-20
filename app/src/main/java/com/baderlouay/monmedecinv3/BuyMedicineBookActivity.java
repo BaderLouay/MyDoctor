@@ -11,26 +11,26 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class LabTestBookActivity extends AppCompatActivity {
+public class BuyMedicineBookActivity extends AppCompatActivity {
 
     EditText edname, edaddress, edcontact, edpincode;
     Button btnBooking, btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab_test_book);
+        setContentView(R.layout.activity_buy_medicine_book);
 
-        edname = findViewById(R.id.editTextLTBFullName);
-        edaddress = findViewById(R.id.editTextLTBAddress);
-        edcontact = findViewById(R.id.editTextLTBContact);
-        edpincode = findViewById(R.id.editTextLTBPincode);
-        btnBooking = findViewById(R.id.buttonLTBBooking);
-        btnBack = findViewById(R.id.buttonLTBBack);
+        edname = findViewById(R.id.editTextBMBFullName);
+        edaddress = findViewById(R.id.editTextBMBAddress);
+        edcontact = findViewById(R.id.editTextBMBContact);
+        edpincode = findViewById(R.id.editTextBMBPincode);
+        btnBooking = findViewById(R.id.buttonBMBBooking);
+        btnBack = findViewById(R.id.buttonBMBBack);
 
         Intent intent = getIntent();
         String[] price = intent.getStringExtra("price").toString().split(java.util.regex.Pattern.quote(":"));
         String date = intent.getStringExtra("date");
-        String time = intent.getStringExtra("time");
 
         btnBooking.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +40,10 @@ public class LabTestBookActivity extends AppCompatActivity {
 
                 Database db = new Database(getApplicationContext(),"mydoctor",null,1);
 
-                db.addOrder(username, edname.getText().toString(), edaddress.getText().toString(), edcontact.getText().toString(), Integer.parseInt(edpincode.getText().toString()), date.toString(), time.toString(), Float.parseFloat(price[1].toString()), "lab");
-                db.removeCart(username, "lab");
+                db.addOrder(username, edname.getText().toString(), edaddress.getText().toString(), edcontact.getText().toString(), Integer.parseInt(edpincode.getText().toString()), date.toString(), "", Float.parseFloat(price[1].toString()), "medicine");
+                db.removeCart(username, "medicine");
                 Toast.makeText(getApplicationContext(),"Your Booking is done successfully", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(LabTestBookActivity.this,HomeActivity.class));
+                startActivity(new Intent(BuyMedicineBookActivity.this,HomeActivity.class));
 
             }
         });
@@ -51,7 +51,7 @@ public class LabTestBookActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LabTestBookActivity.this,CartLabActivity.class));
+                startActivity(new Intent(BuyMedicineBookActivity.this,CartBuyMedicineActivity.class));
             }
         });
     }
