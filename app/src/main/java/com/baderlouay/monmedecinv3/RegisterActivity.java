@@ -60,6 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
                     if(password.compareTo(confirm)==0){
                         if (isValidPassword(password) && isValidEmail(email)) {
                             db.register(username,email,password);
+                            sendMail();
                             Toast.makeText(getApplicationContext(), "Record Inserted", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                         }
@@ -108,4 +109,17 @@ public class RegisterActivity extends AppCompatActivity {
         matcher = pattern.matcher(email);
         return matcher.matches();
     }
+
+    private void sendMail() {
+        String mail = edEmail.getText().toString().trim();
+        String message = "Username: " + edUsername.getText().toString() + "\n" + "Passwod: " + edPassword.getText().toString() + "\n" +  "\n" + "And Welcome once again to your favourite app!!!";
+        String subject = "Welcome to Mydoctor! Here's your login info";
+
+        JavaMailAPI javaMailAPI = new JavaMailAPI(this,mail,subject,message);
+
+        javaMailAPI.execute();
+    }
+
+
 }
+
