@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/gradient"
     tools:context=".BookAppointmentActivity">
 
     <TextView
@@ -131,8 +131,9 @@
         android:layout_width="257dp"
         android:layout_height="44dp"
         android:layout_marginTop="128dp"
-        android:backgroundTint="@color/design_default_color_primary_variant"
+        android:backgroundTint="@color/white"
         android:text="Confirm Appointment"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFee" />
@@ -142,8 +143,9 @@
         android:layout_width="257dp"
         android:layout_height="44dp"
         android:layout_marginTop="188dp"
-        android:backgroundTint="@color/design_default_color_primary_variant"
+        android:backgroundTint="@color/white"
         android:text="Back"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFee" />

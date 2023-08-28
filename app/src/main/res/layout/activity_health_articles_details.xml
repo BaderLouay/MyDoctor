@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backtest"
+    android:background="@drawable/gradient"
     tools:context=".HealthArticlesDetailsActivity">
 
     <TextView
@@ -41,7 +41,8 @@
         android:id="@+id/buttonHADBack"
         android:layout_width="139dp"
         android:layout_height="54dp"
-        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:shadowColor="@color/white"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"

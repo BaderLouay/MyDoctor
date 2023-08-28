@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
+    android:background="@drawable/gradient"
     tools:context=".LabTestDetailsActivity">
 
 
@@ -42,7 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/material_dynamic_neutral30"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:text="Add To Cart"
         app:layout_constraintBottom_toTopOf="@+id/buttonLDBack"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,7 +54,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/material_dynamic_neutral30"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

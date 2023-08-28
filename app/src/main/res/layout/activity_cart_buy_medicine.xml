@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backtest"
+    android:background="@drawable/gradient"
     tools:context=".CartBuyMedicineActivity">
 
     <Button
@@ -13,6 +13,8 @@
         android:layout_height="47dp"
         android:layout_marginTop="16dp"
         android:text="Back"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,6 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Checkout"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"

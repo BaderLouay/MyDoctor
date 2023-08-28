@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backtest"
+    android:background="@drawable/gradient"
     tools:context=".BuyMedicineBookActivity">
 
     <Button
@@ -12,7 +12,8 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:shadowColor="@color/white"
         android:text="Book"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +26,8 @@
         android:layout_width="139dp"
         android:layout_height="54dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         android:shadowColor="@color/white"
         android:text="Back"
         app:layout_constraintEnd_toEndOf="parent"
